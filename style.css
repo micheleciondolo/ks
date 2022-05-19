@@ -18,13 +18,11 @@ html, body {
   margin-top:-100px;
   text-align:center;
 }
-.image_block img {
-	opacity:0.5;
-	text-align:center;
-position: absolute;
-bottom: 30px;
-left:40%;
+
+.imago {
+opacity:0.5;
 }
+
 .scrittine {
 color: red;
 }
