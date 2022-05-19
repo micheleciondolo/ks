@@ -20,11 +20,11 @@ html, body {
 }
 .immaginetta {
   opacity: 0.5;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- margin-top:700px;
-  text-align:center;
+    position: absolute;
+  
+    bottom: 40px;
+	  left:40%;
+  vertical-align:center;
 }
 
 
