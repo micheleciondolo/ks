@@ -19,6 +19,18 @@ html, body {
   text-align:center;
 }
 
+.video {
+
+  position:absolute;
+  top:10%;
+  left:50%;
+  width:1100px;
+  margin-left:-550px;
+  margin-top:-100px;
+  text-align:center;
+}
+
+
 .imago {
 opacity:0.5;
 }
