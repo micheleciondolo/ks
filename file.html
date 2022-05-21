@@ -4,6 +4,23 @@
   <title>Kathrine Birthday Secret</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+<script>
+function saveAs(url) {    
+  var filename = url.substring(url.lastIndexOf("/") + 1).split("?")[0];
+  var xhr = new XMLHttpRequest();
+  xhr.responseType = 'blob';
+  xhr.onload = function() {
+    var a = document.createElement('a');
+    a.href = window.URL.createObjectURL(xhr.response);
+    a.download = filename; 
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    delete a;
+  };
+  xhr.open('GET', url);
+  xhr.send();
+}</script>
   
   <body>
   <div class="video"> 
@@ -11,7 +28,19 @@
   src="https://www.youtube.com/embed/Febv6R2VtE4"
   title="Video per Kathrine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
-<a href="canzone.mp3"><img src="download.png" alt="download" style="width:300px;height:300px;"></a>
+    <br>
+      <br>
+  <pre class="testo">
+   Auguri Cischiona! Questa canzone è per te, inimitabile Cischia di Schio e per i tuoi 21 anni. 
+   Complimenti per questo traguardo evviva!
+La canzone è stata realizzata con mezzi di fortuna, mentre fingevo di lavorare e la voce registrata
+all'interno del parcheggio di un mc Donald's, con i ragazzini trap del luogo
+ che mi guardavano come se avessi molti problemi. Di seguito il download:
+ 
+
+    </pre>
+<a href="javascript:" onclick="saveAs('https://micheleciondolo.github.io/ks/canzone.mp3')"><img src="download.png" alt="download" style="width:300px;height:300px;"/></a>
+
 
   </div>
   </body>
