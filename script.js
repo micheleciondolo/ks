@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var _hours = document.querySelectorAll('.hours');
   var _minutes = document.querySelectorAll('.minutes');
   var _seconds = document.querySelectorAll('.seconds');
-  var date1 = "21/05/2022".split("/");
+  var date1 = "22/05/2022".split("/");
   var compleanno  = new Date(date1[2], date1[1] - 1, date1[0]);
 
   setInterval(function() {
